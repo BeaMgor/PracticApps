@@ -7,12 +7,10 @@ from math import *
 def hacer_click():
     pass
    
-class MainApp(Tk):
-    Tk.__init__(self)
+   ##class MainApp(Tk):
+    ##Tk.__init__(self)
 
 # continuar yo
-
-
 
 ventana = Tk()
 ventana.title("Calculadora")
@@ -25,13 +23,6 @@ colorNumeros=("MistyRose2")
 color_Espec=("SkyBlue3")
 color_tex=("red")
 ventana.resizable(0,0)
-
-
-#crear operativa
-
-
-
-
 
 
 #Variable apra tamaño de botones
