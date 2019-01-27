@@ -5,13 +5,6 @@ from tkinter import ttk
 valor= ""
 
 
-def do_click(num):
-    
-    valorEntrada=StringVar()
-    
-    global valor
-    valor = valor + str(num)
-    valorEntrada.set(valor)
 
 
 #Variable apra tamaño de botones
@@ -76,6 +69,14 @@ class MainApp(Tk):
         botonComa = Button(self, text = ",",font=myFont,fg=self.color_tex, width=wBoton, height=hBoton, command = lambda:do_click(",")).place (x=130, y=290)
         botonIgual = Button(self, text = "=",font=myFont,fg=self.color_tex, width=wBoton, height=hBoton).place (x=190, y=290)
 
+
+    def do_click(num):
+    
+        valorEntrada=StringVar()
+    
+        global valor
+        valor = valor + str(num)
+        valorEntrada.set(valor)
 
      
 
